@@ -11,10 +11,10 @@ let package = Package(
         ),
     ],
     targets: [
+        // 二进制随仓库 tag 一起固定，构建不再依赖官方 OSS 地址。
         .binaryTarget(
             name: "AnyThinkSDK",
-            url: "https://topon-sdk-release.oss-accelerate.aliyuncs.com/TPN_Release/iosnetwork_2/AnyThinkiOS/6.5.86/AnyThinkiOS-6.5.86.zip",
-            checksum: "b70483b27e407cb688d508bf0b0aaa86548d2c4e28bccf432773864cf009fd0c"
+            path: "Binaries/AnyThinkiOS-6.5.86.zip"
         )
     ]
 )
